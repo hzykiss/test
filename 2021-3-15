@@ -8,3 +8,10 @@ appium自动化测试元素定位工具 https://www.cnblogs.com/joy-field/p/1343
 曹世宏的博客 https://cshihong.github.io/
 github搭建博客https://mumaxu.github.io/2018/12/09/GitHub-Hexo-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/
 图片识别https://cloud.tencent.com/developer/article/1485525
+
+启动APP:
+adb shell am start -n com.device.oms/com.device.oms.view.OmsActivity
+dumpsys activity | grep Recent | grep oms
+logcat|grep appscreen
+获取APP包名/界面名
+adb shell dumpsys window windows | findstr mFocusedApp
