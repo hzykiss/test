@@ -1,3 +1,8 @@
+pytest框架
+jmeter
+appium
+slenium
+
 Jmeter性能测试 入门：https://www.cnblogs.com/tankxiao/p/4045439.html#howtoLearn
 github上fork了别人的项目后，再同步更新别人的提交 https://blog.csdn.net/qq1332479771/article/details/56087333?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.control&dist_request_id=5b1a0a7b-d4d9-465a-a0b0-ebaa80ff107a&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.control
 Appium移动自动化测试: https://www.cnblogs.com/fnng/p/4540731.html
@@ -15,3 +20,13 @@ dumpsys activity | grep Recent | grep oms
 logcat|grep appscreen
 获取APP包名/界面名
 adb shell dumpsys window windows | findstr mFocusedApp
+
+获取TaskID:
+dumpsys activity | grep Recent | grep XXX
+logcat|grep appscreen
+
+
+fork后如何与原仓库同步:
+https://blog.csdn.net/csm201314/article/details/83045605
+https://github.com/selfteaching/the-craft-of-selfteaching/issues/67
+https://blog.csdn.net/qq1332479771/article/details/56087333?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.control&dist_request_id=5b1a0a7b-d4d9-465a-a0b0-ebaa80ff107a&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.control
