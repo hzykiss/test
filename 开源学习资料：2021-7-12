@@ -1,0 +1,123 @@
+1、查看linux系统信息 
+	cat /etc/lsb-release
+	lsb_release -a
+	uname -a 查看架构
+   
+2、ubuntu、Debain、Deepin、镜像源： /etc/apt/sources.list
+
+3、更新源： sudo apt-get update
+
+4、deepin安装pip
+python2 ：apt-get install python-pip
+python3 ：apt-get install python3-pip
+
+4、deepin配置pip源
+cd /etc/
+sudo vim pip.conf
+#文件内容
+ [global] 
+ trusted-host = *.*.*.*
+ index-url = http://*.*.*.*:8080/pypi/simple/
+ 
+ 5、防止putty超时退出
+   TMOUT=0
+   
+6、Linux
+ a.常用命令
+	端口查询：netstat -tunlp 用于显示 tcp，udp 的端口和进程等相关情况
+	监听端口状态所对应的进程名称 netstat -nlp tcp/upd 
+	显示协议统计信息和TCP/IP网络连接 netstat -ano 
+	查询端口与服务：lsof -nPi
+	查询文件系统类型与磁盘占用率： df -T
+	查询当前目录下各文件/文件夹大小：du -sh *
+	列出所有文件（包含隐藏文件）：ls -all
+	Linux打包文件： tar cvzf /home/log.tar.gz log 将当前路径下log文件打包成log.tar.gz 
+	tcpdump抓包命令： tcpdump -i any -s 0 -C 10000000 -w ./tcpcap.pcap 
+	查看软件安装路径： which python
+                         whereis python
+	查询进程 ps -ef | grep <pid>
+	查找文件 find /etc -name '*srm*'
+	查找加密脚本 find / -name "*enc*"
+	SSH链接超时设置 TIMEOUT=0
+	实时打印vrm.log   tail -f vrm.log  （日志不断改变的时候使用可以实时显示出日志内容）
+	sed命令替换文件  sed -i '3s/xxaaxx/hahahaha/g' tmp.txt  将tmp.txt文件中第3行的xxaaxx替换成hahahaha
+	查看系统版本：lsb_release -a
+	查看系统位数：getconf LONG_BIT
+	带行号打印出日志 cat -n test.log
+	用于查找的命令，例：find、grep
+	常用的编辑命令，例：vi、diff、sed
+	vi编辑器上下左右变成ABCD 执行：cp /etc/vim/vimrc ~/.vimrc
+	SSH配置文件路径： /etc/ssh/sshd_config
+	网卡配置文件路径： /etc/sysconfig/network-scrip/
+	linux ARP文件：     cat /proc/net/arp 
+	
+linux系统权限：读4、写2、执行1  
+                    User、  	     Group、  	     Other
+	chmod u+x file
+  
+7、常用ADB命令	
+	内存查询：
+	top -n 1 | grep **_server
+	dumpsys meminfo **_server | grep TOTAL:
+	
+	ADB shell常用命令：
+	https://www.cnblogs.com/JianXu/p/5161179.html
+	
+
+					
+Linux系统编译：
+a、预编译：./configure 进行预编译生成 Makefile
+b、编译：make all 是用来编译的，它从Makefile中读取指令，然后编译。
+c、安装：make install 是用来安装的，它也从Makefile中读取指令，安装到指定的位置。
+
+　　make all：产生我们设定的目标，即此范例中的可执行文件。只打make也可以，此时会开始编译原始码，然后连结，并且产生可执行文件。
+　　make clean：清除编译产生的可执行文件及目标文件(object file，*.o)。
+　　make distclean：除了清除可执行文件和目标文件外，把configure所产生的Makefile也清除掉。
+　　make install：将程序安装至系统中。如果原始码编译无误，且执行结果正确，便可以把程序安装至系统预设的可执行文件存放路径。
+				如果用bin_PROGRAMS宏的话，程序会被安装至/usr/local/bin这个目录。
+　　make dist：将程序和相关的档案包装成一个压缩文件以供发布。执行完在目录下会产生一个以PACKAGE-VERSION.tar.gz为名称的文件。
+			 PACKAGE和VERSION这两个变数是根据configure.in文件中AM_INIT_AUTOMAKE(PACKAGE，VERSION)的定义。在此范例中会产生test-1.0.tar.gz的档案。
+　　make distcheck：和make dist类似，但是加入检查包装后的压缩文件是否正常。这个目标除了把程序和相关文件包装成tar.gz文件外，
+				  还会自动把这个压缩文件解开，执行 configure，并且进行make all 的动作，确认编译无误后，会显示这个tar.gz文件可
+				  供发布了。这个检查非常有用，检查过关的包，基本上可以给任何一个具备GNU开发环境-的人去重新编译。
+
+ b.Shell教程
+ #!/bin/bash
+ #! 告诉系统其后路径所指定的程序即是解释此脚本文件的 Shell 程序。
+  1).定义变量  your_name="runoob.com"  （能使用英文字母，数字和下划线，首个字符不能以数字开头）
+  2).使用变量  echo $your_name vim
+               echo "I am good at ${your_name}Script"  变量名外面的花括号是可选的，加不加都行，加花括号是为了帮助解释器识别变量的边界，推荐给所有变量加上花括号
+  3).只读变量  使用 readonly 命令可以将变量定义为只读变量，只读变量的值不能被改变
+               #!/bin/bash
+               your_name="https://www.google.com"
+               readonly your_name
+  4).删除变量 unset 命令可以删除变量
+              unset your_name
+  5).变量类型
+            运行shell时，会同时存在三种变量：
+             1) 局部变量 局部变量在脚本或命令中定义，仅在当前shell实例中有效，其他shell启动的程序不能访问局部变量。
+             2) 环境变量 所有的程序，包括shell启动的程序，都能访问环境变量，有些程序需要环境变量来保证其正常运行。必要的时候shell脚本也可以定义环境变量。
+             3) shell变量 shell变量是由shell程序设置的特殊变量。shell变量中有一部分是环境变量，有一部分是局部变量，这些变量保证了shell的正常运行
+  6).
+  实战：
+	例1:扫描系统中包含以下后缀的文件并将结果输出到txt文本中
+	#!/bin/bash
+	#author by xxx
+	FILE_POSTFIX=".mp3|.wma|.wav|.wax|.au|.snd|.raw|.alc|.flac|.aac|.amr|.m4a|.m4r|.m4v|.voc|.vox|.aif|.aiff|.dwd|.ogg|.vobis|.wavpack|.mp2|.ape|.ac3|.midi|.mid|.vqf|.cd|.cda|.md|.s3u|.dsp|.cmf|.mod|.mpc|.mpeg|.mpeg1|.mpeg2|.mpeg3|.mpeg4|.ra|.rm|.mx|.pcm|.swk|.realmedia|.alaw|.ari|.esps|.mus|.nist|.nwc|.psi|.rmi|.sd|.sf|.sndr|.sndt|.syw|.swa|.txw|.ulaw|.v8|.vmf|.bwv|.c01|.o01|.m3u|.cap|.dls|.iff|.cel|.smp|.svx|.dbl|.sam"
+	LIST=(${FILE_POSTFIX//|/ })
+	FIND_RESULT="result`date +%Y%m%d%H%M%S`.txt"
+
+	for var in ${LIST[@]}
+	do
+			echo -e "\033[32m*********start search *$var**************\033[0m"
+			find / -name *$var >> $FIND_RESULT
+			echo -e "\033[32m*********finished search *$var**************\033[0m"
+	done
+	echo -e "\033[32m all search has finished !\033[0m"
+	echo -e "\033[31m please manual check the txt file result !\033[0m"
+
+ 
+7、Win 常用命令
+  1).添加/删除路由
+  2).查看arp表： arp -a   
+  
