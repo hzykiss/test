@@ -27,6 +27,9 @@ web：
 https://echarts.apache.org/zh/index.html
 web开发 https://developer.mozilla.org/zh-CN/docs/learn
 
+硬件：
+STM32CubeMX的使用：https://www.cnblogs.com/h1019384803/p/10962494.html
+
 
 启动APP:
 adb shell am start -n com.device.oms/com.device.oms.view.OmsActivity
