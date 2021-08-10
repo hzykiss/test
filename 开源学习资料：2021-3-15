@@ -12,7 +12,6 @@ pytest + allure生成测试报告 https://blog.csdn.net/u010698107/article/detai
 appium自动化测试元素定位工具 https://www.cnblogs.com/joy-field/p/13434042.html
 曹世宏的博客 https://cshihong.github.io/
 github搭建博客https://mumaxu.github.io/2018/12/09/GitHub-Hexo-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/
-图片识别https://cloud.tencent.com/developer/article/1485525
 python编程练习之四——获取系统内存、CPU、磁盘、平均负载信息并保存到数据库中 https://blog.csdn.net/Running_free/article/details/77900296
 Linux Shell 脚本编程（8）—文本过滤（awk命令） https://blog.csdn.net/lingfengliujian/article/details/78276894
 
@@ -21,6 +20,10 @@ python：
 Python Socke网络编程：https://www.cnblogs.com/Axi8/p/11979090.html#1-socket
 Python JSONPath：https://blog.csdn.net/mouday/article/details/107928131
 资料问题查询：https://stackoverflow.com/
+
+图片识别对比：
+  图片识别：https://cloud.tencent.com/developer/article/1485525
+  利用Python3和OpenCV对比两张图片的不同，提取差异性：https://blog.csdn.net/qq_34241387/article/details/103818468
 
 Linux：
 常用命令：https://www.cnblogs.com/spfanlost/p/13764238.html
