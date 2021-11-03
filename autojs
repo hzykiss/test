@@ -1,0 +1,42 @@
+function getLength()
+{	
+    requestScreebCapture();
+	var img = captureSscreen();
+    var i = 2339;
+    var flag = 0;
+    while(i>0){
+        var color = images.pixel(img,i,1226);
+        switch(flag){
+            case 0:
+                console.log("获取end_R坐标点")
+                if (colors.toString(color) == "#ffb1a374")
+				{
+					var end_R= i;
+					flag = flag + 1;
+				}
+                break;
+            case 1:
+                console.log("获取end_L坐标点")
+                if (colors.toString(color) == "#ffffffff")
+				{
+					var end_L= i;
+					flag = flag + 1;
+				}
+                break;
+            case 2:
+                console.log("获取start_R坐标点")
+                if (colors.toString(color) == "#ffb1a374")
+				{
+					var start_R= i;
+					flag = flag + 1;
+					var result= end_L - start_R;
+				}
+                break;
+        }
+        i = i - 1;
+    }
+    return result;
+}
+
+var res = getLength();
+console.log(res);
