@@ -40,3 +40,29 @@ function getLength()
 
 var res = getLength();
 console.log(res);
+
+
+function touchPhone(res){
+    var x = Math.round(device.width / 2);
+    var y = Math.round(device.height / 2);
+    var touch_time = Math.round(res  * 1.62);
+    //console.log("x：", x);
+    //console.log("y：", y);
+    console.log("touch_time：", touch_time);
+    press(x, y, touch_time);
+}
+
+function main(){
+    slee(5000);
+
+    requestScreebCapture();
+    // numbs：循环模拟的次数
+    var numbs = 1;
+    for (var i = 0;i<numbs;i++){
+        console.log("*开始获取坐标距离");
+        res =  getLength();
+        console.log("*开始模拟长按");
+        touchPhone(res);
+
+    }
+}
