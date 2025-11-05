@@ -77,6 +77,205 @@ QSocketNotifier: Invalid socket 5 and type 'Read', disabling...
 kwin_core: XCB error: 150 (BadDamage), sequence: 17025, resource id: 16777244, major code: 142 (DAMAGE), minor code: 3 (Subtract)
 
 
+Report issues at https://termux.org/issues
 
+~ $ /data/data/com.termux/files/home/startkde_chrootArch.sh
+termux-x11: no process found
+Xwayland: no process found
+pulseaudio: no process found
+virgl_test_server_android: no process found
+termux-wake-lock: no process found
+Starting: Intent { cmp=com.termux.x11/.MainActivity }
+Error type 3
+Error: Activity class {com.termux.x11/com.termux.x11.MainActivity} does not exist.
+/data/data/com.termux/files/home/startkde_chrootArch.sh: line 16: virgl_test_server_android: command not found
+mount: mounting tmpfs on /data/local/tmp/chrootarch/dev/shm failed: No such file or directory
+tty: ttyname error: No such device
+Initializing  "/usr/lib/qt6/plugins/plasma/kcms/systemsettings/kcm_fonts.so"
+Initializing  "/usr/lib/qt6/plugins/plasma/kcms/systemsettings/kcm_style.so"
+Initializing  "/usr/lib/qt6/plugins/plasma/kcms/systemsettings/kcm_mouse.so"
+kcm_mouse: Not able to select appropriate backend.
+org.kde.plasma.session: process job  "kcminit_startup" finished with exit code  0
+QDBusObjectPath: invalid path "/modules/wpad-detector"
+kf.dbusaddons: The kded module name "wpad-detector" is invalid!
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+Couldn't start kglobalaccel from org.kde.kglobalaccel.service: QDBusError("org.freedesktop.DBus.Error.ServiceUnknown", "The name org.kde.kglobalaccel was not provided by any .service files")
+QDBusObjectPath: invalid path "/modules/oom-notifier"
+kf.dbusaddons: The kded module name "oom-notifier" is invalid!
+Could not load a session backend. Session management operations such as shutdown will not be operational. This is a setup issue.
+QDBusObjectPath: invalid path "/modules/plasma-session-shortcuts"
+kf.dbusaddons: The kded module name "plasma-session-shortcuts" is invalid!
+org.kde.kameleon: found no RGB LED devices
+kcm_touchpad: Using X11 backend
+org.kde.libkbolt: Failed to connect to Bolt manager DBus interface: Not connected to D-Bus server
+org.kde.bolt.kded: Couldn't connect to Bolt DBus daemon
+QDBusObjectPath: invalid path "/modules/kded_plasma-welcome"
+kf.dbusaddons: The kded module name "kded_plasma-welcome" is invalid!
+org.kde.plasma.printmanager.kded: Unable to register service to systemBus: "com.redhat.NewPrinterNotification"
+org.kde.wacomtablet.common: d->name.isEmpty? true
+org.kde.wacomtablet.common: d->name.isEmpty? true
+Couldn't start kglobalaccel from org.kde.kglobalaccel.service: QDBusError("org.freedesktop.DBus.Error.ServiceUnknown", "The name org.kde.kglobalaccel was not provided by any .service files")
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.modemmanagerqt: Failed enumerating MM objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+xsettingsd: Loaded 16 settings from /root/.config/xsettingsd/xsettingsd.conf
+Known activities: QList("3ffa627e-d191-4faf-a68c-8e3dbfb34074")
+kf.bluezqt: PendingCall Error: "The name org.bluez.obex was not provided by any .service files"
+Known activities: QList("3ffa627e-d191-4faf-a68c-8e3dbfb34074")
+org.kde.pulseaudio: No object for name "OpenSL_ES_sink.monitor"
+xsettingsd: Created window 0x1800001 on screen 0 with timestamp 2394081
+xsettingsd: Selection _XSETTINGS_S0 is owned by 0x0
+xsettingsd: Took ownership of selection _XSETTINGS_S0
+kscreen.kded: UPower not available, lid detection won't work
+kscreen.kded: PowerDevil SuspendSession action not available!
+Couldn't start kglobalaccel from org.kde.kglobalaccel.service: QDBusError("org.freedesktop.DBus.Error.ServiceUnknown", "The name org.kde.kglobalaccel was not provided by any .service files")
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+QStandardPaths: wrong permissions on runtime directory /tmp/runtime-root, 0777 instead of 0700
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+QStandardPaths: wrong permissions on runtime directory /tmp/runtime-root, 0777 instead of 0700
+Initializing  "/usr/lib/qt6/plugins/plasma/kcms/systemsettings_qwidgets/kcm_kgamma.so"
+kf.kio.gui: Failed to determine systemd version, falling back to extremely legacy forking mode.
+Initializing  "/usr/lib/qt6/plugins/plasma/kcms/systemsettings/kcm_touchpad.so"
+kcm_touchpad: Using X11 backend
+kwin_platform_x11_standalone: glSwapInterval is unsupported
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+Xlib XKB extension major= 1  minor= 0
+New PolkitAgentListener  0x571583a110
+Adding new listener  PolkitQt1::Agent::Listener(0x5715839ed0) for  0x571583a110
+Listener online
+"Cannot create unix session: No session for pid 12010"
+
+** (process:12010): CRITICAL **: 09:58:02.095: polkit_agent_listener_register_with_options: assertion 'POLKIT_IS_SUBJECT (subject)' failed
+"Cannot register authentication agent!"
+Authentication agent result: false
+Couldn't register listener!
+
+** (process:12017): CRITICAL **: 09:58:02.103: polkit_system_bus_name_new: assertion 'g_dbus_is_unique_name (name)' failed
+
+(process:12017): GLib-GObject-CRITICAL **: 09:58:02.103: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+** (process:12017): CRITICAL **: 09:58:02.103: polkit_system_bus_name_new: assertion 'g_dbus_is_unique_name (name)' failed
+
+(process:12017): GLib-GObject-CRITICAL **: 09:58:02.103: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+** (process:12017): CRITICAL **: 09:58:02.103: polkit_system_bus_name_new: assertion 'g_dbus_is_unique_name (name)' failed
+
+(process:12017): GLib-GObject-CRITICAL **: 09:58:02.103: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+Could not load a session backend. Session management operations such as shutdown will not be operational. This is a setup issue.
+org.kde.powerdevil: Could not query keyboard backlight brightness "Not connected to D-Bus server"
+error: XDG_RUNTIME_DIR is invalid or not set in the environment.
+Failed to create wl_display (No such file or directory)
+
+** (process:12017): CRITICAL **: 09:58:02.105: polkit_system_bus_name_new: assertion 'g_dbus_is_unique_name (name)' failed
+
+(process:12017): GLib-GObject-CRITICAL **: 09:58:02.105: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+QThreadStorage: entry 2 destroyed before end of thread 0x57154e17a0
+QThreadStorage: entry 1 destroyed before end of thread 0x57154e17a0
+Watching for DPMS state changes unimplemented
+Watching for display connection changes, resolved watch mode = Watch_Mode_Xevent, poll loop interval = 100 millisec
+                                         extra_stabilization_millisec: 0,  stabilization_poll_millisec: 100
+org.kde.powerdevil: org.kde.powerdevil.discretegpuhelper.hasdualgpu failed
+org.kde.powerdevil: org.kde.powerdevil.chargethresholdhelper.getthreshold failed "DBus Backend error: service start org.kde.powerdevil.chargethresholdhelper failed: Not connected to D-Bus server"
+org.kde.powerdevil: org.kde.powerdevil.chargethresholdhelper.getconservationmode failed "DBus Backend error: service start org.kde.powerdevil.chargethresholdhelper failed: Not connected to D-Bus server"
+org.kde.powerdevil: org.kde.powerdevil.backlighthelper.brightness failed
+virtual QStringList Solid::Backends::UPower::UPowerManager::allDevices()  error:  QDBusError("org.freedesktop.DBus.Error.Disconnected", "Not connected to D-Bus server")
+org.kde.kscreen.dpms: DPMS extension not available
+X server XKB extension major= 1  minor= 0
+QNetworkInformation has no backend. Is NetworkManager.service running?
+couldn't load "/usr/lib/qt6/plugins/discover-notifier/DiscoverPackageKitNotifier.so" because "Cannot load library /usr/lib/qt6/plugins/discover-notifier/DiscoverPackageKitNotifier.so: libpackagekitqt6.so.2: cannot open shared object file: No such file or directory"
+virtual QStringList Solid::Backends::UPower::UPowerManager::allDevices()  error:  QDBusError("org.freedesktop.DBus.Error.Disconnected", "Not connected to D-Bus server")
+
+** (libddcutil:12017): CRITICAL **: 09:58:02.357: polkit_system_bus_name_new: assertion 'g_dbus_is_unique_name (name)' failed
+
+(libddcutil:12017): GLib-GObject-CRITICAL **: 09:58:02.357: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+** (libddcutil:12017): CRITICAL **: 09:58:02.357: polkit_system_bus_name_new: assertion 'g_dbus_is_unique_name (name)' failed
+
+(libddcutil:12017): GLib-GObject-CRITICAL **: 09:58:02.358: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+org.kde.powerdevil: Handle button events action could not check for screen configuration
+org.kde.powerdevil: org.kde.powerdevil.chargethresholdhelper.getthreshold failed "DBus Backend error: service start org.kde.powerdevil.chargethresholdhelper failed: Not connected to D-Bus server"
+org.kde.powerdevil: org.kde.powerdevil.chargethresholdhelper.getconservationmode failed "DBus Backend error: service start org.kde.powerdevil.chargethresholdhelper failed: Not connected to D-Bus server"
+Could not load a session backend. Session management operations such as shutdown will not be operational. This is a setup issue.
+kf.plasma.quick: Applet preload policy set to 1
+org.kde.plasma.kicker: Entry is not valid "org.kde.kontact.desktop" 0x5a34409b90
+org.kde.plasma.kicker: Entry is not valid "org.kde.dolphin.desktop" 0x5a34409b90
+org.kde.plasma.kicker: Entry is not valid "org.kde.kontact.desktop" 0x5a34409b90
+org.kde.plasma.kicker: Entry is not valid "org.kde.dolphin.desktop" 0x5a34409b90
+kpipewire_logging: error: "Failed to connect to PipeWire" 0
+received error while creating the stream "Failed to connect to PipeWire" Media monitor will not work.
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.i18n: Trying to convert empty KLocalizedString to QString.
+virtual QStringList Solid::Backends::UPower::UPowerManager::allDevices()  error:  QDBusError("org.freedesktop.DBus.Error.Disconnected", "Not connected to D-Bus server")
+qrc:/qt/qml/plasma/applet/org/kde/plasma/digitalclock/Tooltip.qml:54:9: QML Heading: Binding loop detected for property "mainText":
+qrc:/qt/qml/plasma/applet/org/kde/plasma/digitalclock/Tooltip.qml:63:13
+qrc:/qt/qml/plasma/applet/org/kde/plasma/digitalclock/main.qml:83: TypeError: Property 'dateFormatter' of object NoTimezoneWarning_QMLTYPE_703(0x5a34dfeb50) is not a function
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
 
 
