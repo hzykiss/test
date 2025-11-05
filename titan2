@@ -1,0 +1,82 @@
+Report issues at https://termux.org/issues
+
+~ $ /data/data/com.termux/files/home/startkde_chrootArch.sh
+termux-x11: no process found
+Xwayland: no process found
+pulseaudio: no process found
+virgl_test_server_android: no process found
+termux-wake-lock: no process found
+Starting: Intent { cmp=com.termux.x11/.MainActivity }
+Error type 3
+Error: Activity class {com.termux.x11/com.termux.x11.MainActivity} does not exist.
+/data/data/com.termux/files/home/startkde_chrootArch.sh: line 16: virgl_test_server_android: command not found
+mount: mounting tmpfs on /data/local/tmp/chrootarch/dev/shm failed: No such file or directory
+tty: ttyname error: No such device
+Initializing  "/usr/lib/qt6/plugins/plasma/kcms/systemsettings/kcm_fonts.so"
+Initializing  "/usr/lib/qt6/plugins/plasma/kcms/systemsettings/kcm_style.so"
+Initializing  "/usr/lib/qt6/plugins/plasma/kcms/systemsettings/kcm_mouse.so"
+kcm_mouse: Not able to select appropriate backend.
+org.kde.plasma.session: process job  "kcminit_startup" finished with exit code  0
+kf.bluezqt: Cannot open /dev/rfkill for reading!
+QDBusObjectPath: invalid path "/modules/wpad-detector"
+kf.dbusaddons: The kded module name "wpad-detector" is invalid!
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+Couldn't start kglobalaccel from org.kde.kglobalaccel.service: QDBusError("org.freedesktop.DBus.Error.ServiceUnknown", "The name org.kde.kglobalaccel was not provided by any .service files")
+QDBusObjectPath: invalid path "/modules/oom-notifier"
+kf.dbusaddons: The kded module name "oom-notifier" is invalid!
+Could not load a session backend. Session management operations such as shutdown will not be operational. This is a setup issue.
+QDBusObjectPath: invalid path "/modules/plasma-session-shortcuts"
+kf.dbusaddons: The kded module name "plasma-session-shortcuts" is invalid!
+org.kde.kameleon: found no RGB LED devices
+kcm_touchpad: Using X11 backend
+org.kde.libkbolt: Failed to connect to Bolt manager DBus interface: Not connected to D-Bus server
+org.kde.bolt.kded: Couldn't connect to Bolt DBus daemon
+QDBusObjectPath: invalid path "/modules/kded_plasma-welcome"
+kf.dbusaddons: The kded module name "kded_plasma-welcome" is invalid!
+org.kde.plasma.printmanager.kded: Unable to register service to systemBus: "com.redhat.NewPrinterNotification"
+Couldn't start kglobalaccel from org.kde.kglobalaccel.service: QDBusError("org.freedesktop.DBus.Error.ServiceUnknown", "The name org.kde.kglobalaccel was not provided by any .service files")
+org.kde.wacomtablet.common: d->name.isEmpty? true
+org.kde.wacomtablet.common: d->name.isEmpty? true
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.solid.backends.udisks2: Failed enumerating UDisks2 objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+kf.modemmanagerqt: Failed enumerating MM objects: "org.freedesktop.DBus.Error.Disconnected"
+ "Not connected to D-Bus server"
+Known activities: QList("edc27187-8329-4c27-935b-55a5055f5606")
+Known activities: QList("edc27187-8329-4c27-935b-55a5055f5606")
+kf.bluezqt: PendingCall Error: "The name org.bluez.obex was not provided by any .service files"
+xsettingsd: Loaded 16 settings from /home/arch/.config/xsettingsd/xsettingsd.conf
+xsettingsd: Created window 0x1800001 on screen 0 with timestamp 2121024
+xsettingsd: Selection _XSETTINGS_S0 is owned by 0x0
+xsettingsd: Took ownership of selection _XSETTINGS_S0
+org.kde.pulseaudio: No object for name "OpenSL_ES_sink.monitor"
+kscreen.kded: UPower not available, lid detection won't work
+kscreen.kded: PowerDevil SuspendSession action not available!
+Couldn't start kglobalaccel from org.kde.kglobalaccel.service: QDBusError("org.freedesktop.DBus.Error.ServiceUnknown", "The name org.kde.kglobalaccel was not provided by any .service files")
+kwin_platform_x11_standalone: glSwapInterval is unsupported
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-arch'
+QStandardPaths: wrong permissions on runtime directory /tmp/runtime-arch, 0777 instead of 0700
+Failed to create ICEauthority file
+KCrash: Application 'ksmserver' crashing... crashRecursionCounter = 2
+KCrash: Application Name = ksmserver path = /usr/bin pid = 11067
+KCrash: Arguments: /usr/bin/ksmserver
+KCrash: Attempting to start /usr/lib/drkonqi
+qrc:/ui/MainPage.qml:71:9: QML MainPageButton: Binding loop detected for property "icon.height":
+qrc:/ui/MainPageButton.qml:15:5
+qrc:/ui/MainPage.qml:53:9: QML MainPageButton: Binding loop detected for property "icon.height":
+qrc:/ui/MainPageButton.qml:15:5
+org.kde.drkonqi: Failed to get unit by pid QDBusError("org.freedesktop.DBus.Error.Spawn.ChildExited", "Process org.freedesktop.systemd1 exited with status 1")
+QThread::setPriority: Cannot set priority, thread is not running
+adjusting gdb profile for size MemoryFence::Size::Spacious
+Failed to add memory pressure event source
+QSocketNotifier: Invalid socket 5 and type 'Read', disabling...
+kwin_core: XCB error: 150 (BadDamage), sequence: 17025, resource id: 16777244, major code: 142 (DAMAGE), minor code: 3 (Subtract)
+
+
+
+
+
