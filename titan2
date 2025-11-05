@@ -356,21 +356,13 @@ Failed to add memory pressure event source
 QSocketNotifier: Invalid socket 5 and type 'Read', disabling...
 
 
-chroot /path/to/archlinux /bin/bash -c "
-    export USER=\$(whoami)
-    export HOME=/home/\$USER
-    export XDG_RUNTIME_DIR=/tmp/runtime-\$USER
-    export DISPLAY=:0
-    export QT_QPA_PLATFORM=xcb
-    
-    # 创建运行时目录
-    mkdir -p \$XDG_RUNTIME_DIR
-    chmod 700 \$XDG_RUNTIME_DIR
-    
-    # 启动服务
-    dbus-daemon --system --fork
-    dbus-daemon --session --fork
-    
-    # 启动 X server 和 KDE
-    startx
+mnt="/path/to/archlinux"
+
+busybox chroot $mnt /bin/su - droidmaster -c "
+    export DISPLAY=:0 PULSE_SERVER=tcp:127.0.0.1:4713 XDG_RUNTIME_DIR=/tmp/runtime-droidmaster QT_QPA_PLATFORM=xcb && 
+    mkdir -p \$XDG_RUNTIME_DIR && 
+    chmod 700 \$XDG_RUNTIME_DIR && 
+    touch ~/.ICEauthority && 
+    chmod 600 ~/.ICEauthority && 
+    dbus-launch --exit-with-session startx
 "
