@@ -366,3 +366,6 @@ busybox chroot $mnt /bin/su - droidmaster -c "
     chmod 600 ~/.ICEauthority && 
     dbus-launch --exit-with-session startx
 "
+
+dbus-daemon[26366]: Failed to start message bus: Failed to bind socket "/tmp/dbus-zCRmP3AnD2": Permission denied
+EOF in dbus-launch reading address from bus daemon
